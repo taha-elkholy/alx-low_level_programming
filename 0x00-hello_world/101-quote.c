@@ -3,7 +3,7 @@
 /**
  * main - starter point for the programe
  *
- * this function print a singl qute
+ * this function print a qute
  * Return: Always 0 (Success)
  */
 int main(void)
