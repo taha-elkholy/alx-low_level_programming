@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * main - starter point to the program
+ * print_alphabet - prints all alphabet
  *
  * this program prints all alphabet in lower case
- * Return: (0) return nothing
+ * Return: Always void (Success)
  */
+
 void print_alphabet(void)
 {
 	int i;
