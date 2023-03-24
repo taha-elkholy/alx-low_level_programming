@@ -12,7 +12,8 @@ void print_number(int n);
 	int c;
 	long m, num;
 
-	num = m;
+	num = n;
+
 	if (num < 0)
 	{
 		num *= -1;
@@ -25,9 +26,13 @@ void print_number(int n);
 	while (c)
 	{
 		if (num / (m * 10) > 0)
+		{
 			m *= 10;
+		}
 		else
+		{
 			c = 0;
+		}
 	}
 
 	while (num >= 0)
