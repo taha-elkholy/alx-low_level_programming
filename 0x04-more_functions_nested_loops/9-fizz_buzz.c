@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - print numbers
+ * main - start point
  *
- * Return: void
+ * Return: 0
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -30,5 +30,8 @@ void fizz_buzz(void)
 		}
 
 	}
+
 	printf("\n");
+
+	return (0);
 }
