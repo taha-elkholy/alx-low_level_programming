@@ -27,12 +27,16 @@ int _strlen(char *s)
  */
 void rev_string(char *s)
 {
-	int i, len;
+	int i, len, ss_index = 0;
 
-	len = _strlen(s);
+	len = _strlen(s) - 1; /* remove '\0' */
+	char ss[len];
+
 	for (i = len; i >= 0; i--)
 	{
-		_putchar(s[i]);
+		ss[ss_index] = s[i];
+		ss_index++;
 	}
-	_putchar('\n');
+
+	s = ss;
 }
