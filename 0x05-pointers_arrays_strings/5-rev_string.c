@@ -30,7 +30,7 @@ void rev_string(char *s)
 	int i, len, ss_index = 0;
 
 	len = _strlen(s) - 1; /* remove '\0' */
-	char ss[len];
+	char *ss;
 
 	for (i = len; i >= 0; i--)
 	{
