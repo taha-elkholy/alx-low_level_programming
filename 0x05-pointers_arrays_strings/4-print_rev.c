@@ -29,7 +29,7 @@ void print_rev(char *s)
 {
 	int i, len;
 
-	len = _strlen(s);
+	len = _strlen(s) +1; // for '\0' is the last char
 	for (i = len; i >= 0; i--)
 	{
 		_putchar(s[i]);
