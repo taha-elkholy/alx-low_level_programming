@@ -29,7 +29,7 @@ void rev_string(char *s)
 {
 	int i, len;
 
-	len = _strlen(s) - 1; /* remove the count of '\0' */
+	len = _strlen(s);
 	for (i = len; i >= 0; i--)
 	{
 		_putchar(s[i]);
