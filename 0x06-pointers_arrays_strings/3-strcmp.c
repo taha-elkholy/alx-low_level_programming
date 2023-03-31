@@ -24,17 +24,13 @@ int _strcmp(char *s1, char *s2)
 		l2++;
 	}
 
-	if (l1 > l2)
+	if (l1 == l2)
 	{
-		res = 1;
-	}
-	else if (l1 < l2)
-	{
-		res = -1;
+		res = 0;
 	}
 	else
 	{
-		res = 0;
+		res = l1 - l2;
 	}
 
 	return (res);
