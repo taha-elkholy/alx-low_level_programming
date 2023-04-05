@@ -1,6 +1,6 @@
 /**
  * _strlen_recursion - a function that get length of a string using recursion
- * @s: str 
+ * @s: str to get length
  *
  * Return: length of str.
  */
@@ -11,5 +11,5 @@ int _strlen_recursion(char *s)
 		return (0);
 	}
 
-	retun 1 + _strlen_recursion(s + 1);
+	return (1 + _strlen_recursion(s + 1));
 }
