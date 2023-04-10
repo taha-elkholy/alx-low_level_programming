@@ -18,11 +18,11 @@ int main(int argc, char *argv[])
 	else
 	{
 		int i, sum;
-		
+
 		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) != NULL)
+			if (atoi(argv[i]) != '\0')
 			{
 				sum += atoi(argv[i]);
 			}
