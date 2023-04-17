@@ -2,6 +2,8 @@
 #include "main.h"
 #include "dog.h"
 
+typedef struct dog;
+
 /**
  * init_dog - function create new dog with data
  * @d: the dog
