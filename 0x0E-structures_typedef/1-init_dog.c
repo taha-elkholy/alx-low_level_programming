@@ -1,8 +1,5 @@
 #include <stdio.h>
-#include "main.h"
 #include "dog.h"
-
-typedef struct dog;
 
 /**
  * init_dog - function create new dog with data
@@ -15,7 +12,10 @@ typedef struct dog;
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	if (d != NULL)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
