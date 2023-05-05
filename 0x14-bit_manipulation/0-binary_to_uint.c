@@ -3,7 +3,7 @@
  * Author: This file created by TahaElkholy
  */
 
-#include "lists.h"
+#include "main.h"
 
 /**
  * binary_to_uint - convert binary to unit
@@ -29,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (i >= 0)
 	{
-		res += ((b[i] - '0') * base);
+		res += ((b[i] - '0') * l);
 		l *= 2;
 		i--;
 	}
