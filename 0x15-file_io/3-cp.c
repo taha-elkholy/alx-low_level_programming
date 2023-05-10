@@ -37,8 +37,7 @@ int main(int argc, char *argv[])
 	if (file2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		close(file1);
-		exit(99);
+		close(file1), exit(99);
 	}
 	while (n1 == 1024)
 	{
