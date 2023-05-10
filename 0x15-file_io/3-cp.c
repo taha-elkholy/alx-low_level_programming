@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file1 file2\n"), exit(97);
-
 	file1 = open(argv[1], O_RDONLY);
 	if (file1 == -1)
 	{
@@ -32,7 +31,6 @@ int main(int argc, char *argv[])
 	}
 	file2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR
 	| S_IRGRP | S_IWGRP | S_IROTH);
-
 	if (file2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
