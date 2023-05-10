@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	char ch[1024];
 
 	if (argc != 3)
-		dprintf(STDERR_FILENO, "Usage: cp file1 file2\n"), exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	file1 = open(argv[1], O_RDONLY);
 	if (file1 == -1)
 	{
