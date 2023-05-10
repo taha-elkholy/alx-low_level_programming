@@ -13,7 +13,6 @@
  * @argc: number of args
  * @argv: arguments
  *
- * desc: this progrum copy content of a file into other file
  * Return: 1
  */
 int main(int argc, char *argv[])
